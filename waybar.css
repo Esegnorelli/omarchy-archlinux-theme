@@ -8,29 +8,32 @@ window#waybar {
     border-bottom: 2px solid @accent;
 }
 
-/* Workspaces — seletores com classe superam o all:initial do style.css */
-/* 󰊠 ghost Pinky — inativo com janela (matches all non-active) */
+/* Workspaces — especificidade de classe supera all:initial do style.css */
+/* 󰊠 ghost — workspace ocupado não ativo */
 #workspaces button:not(.active) {
+    font-family: 'JetBrainsMono Nerd Font Mono';
     color: #FFB8FF;
     opacity: 0.9;
 }
 
-/* · pellet — vazio (sobrescreve :not(.active) por vir depois) */
+/* ● pellet — workspace vazio */
 #workspaces button.empty {
-    color: #4444aa;
-    font-size: 10px;
-    opacity: 0.7;
+    font-family: 'JetBrainsMono Nerd Font Mono';
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.25);
+    opacity: 0.5;
 }
 
-/* 󰮯 pacman — ativo */
+/* 󰮯 pacman — workspace ativo */
 #workspaces button.active {
+    font-family: 'JetBrainsMono Nerd Font Mono';
     color: #FFD700;
-    font-size: 16px;
     opacity: 1.0;
 }
 
 /* hover */
 #workspaces button:hover {
+    font-family: 'JetBrainsMono Nerd Font Mono';
     color: #FFD700;
     opacity: 1.0;
 }
