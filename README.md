@@ -12,7 +12,7 @@ A clean, minimal theme based on the Arch Linux aesthetic.
 
 - Arch Linux blue (`#1793d1`) as primary accent
 - No rounded corners — sharp, clean edges
-- Waybar with Pac-Man workspace icons
+- Waybar with Pac-Man workspace icons (active / occupied / empty)
 - Blur effects tuned for dark backgrounds
 - Custom Hyprland animations
 
@@ -20,11 +20,19 @@ A clean, minimal theme based on the Arch Linux aesthetic.
 
 ```bash
 omarchy-theme-install https://github.com/Esegnorelli/omarchy-archlinux-theme
+omarchy-theme-set "Archlinux"
+```
+
+### Apply full Waybar config (Pac-Man workspaces)
+
+The `waybar/` directory has the complete Waybar layout with Pac-Man workspace icons:
+
+```bash
+cp ~/.config/omarchy/themes/archlinux/waybar/config.jsonc ~/.config/waybar/config.jsonc
+cp ~/.config/omarchy/themes/archlinux/waybar/style.css ~/.config/waybar/style.css
+omarchy-restart-waybar
 ```
 
 ## Backgrounds
 
-Three wallpapers included:
-- Arch logo minimal
-- Arch grid pattern  
-- Arch glow effect
+Three wallpapers included — the theme rotates through them automatically.
