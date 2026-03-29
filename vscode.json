@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#1793d1",
+    "activityBar.activeBackground": "#1c2333",
+    "tab.activeBorderTop": "#1793d1",
+    "focusBorder": "#1793d1",
+    "button.background": "#1793d1",
+    "button.hoverBackground": "#33b3f0",
+    "progressBar.background": "#1793d1",
+    "editorLink.activeForeground": "#1793d1",
+    "textLink.foreground": "#1793d1"
+  }
+}

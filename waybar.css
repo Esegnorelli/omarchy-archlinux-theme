@@ -1,0 +1,89 @@
+@define-color foreground #e0e6ed;
+@define-color background rgba(13, 17, 23, 0.55);
+@define-color accent #1793d1;
+@define-color accent-hover #33b3f0;
+
+/* Accent border at the bottom of the bar */
+window#waybar {
+    border-bottom: 2px solid @accent;
+}
+
+/* Workspaces — seletores com classe superam o all:initial do style.css */
+/* 󰊠 ghost Pinky — inativo com janela (matches all non-active) */
+#workspaces button:not(.active) {
+    color: #FFB8FF;
+    opacity: 0.9;
+}
+
+/* · pellet — vazio (sobrescreve :not(.active) por vir depois) */
+#workspaces button.empty {
+    color: #4444aa;
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+/* 󰮯 pacman — ativo */
+#workspaces button.active {
+    color: #FFD700;
+    font-size: 16px;
+    opacity: 1.0;
+}
+
+/* hover */
+#workspaces button:hover {
+    color: #FFD700;
+    opacity: 1.0;
+}
+
+/* Omarchy/Arch icon on left stays blue */
+#custom-omarchy {
+    color: @accent;
+}
+
+/* Right side icons: white by default, blue on hover */
+#cpu,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth {
+    color: @foreground;
+}
+
+#battery.warning {
+    color: #d8a657;
+}
+
+#battery.critical {
+    color: #ff5555;
+}
+
+#clock:hover,
+#cpu:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover {
+    color: @accent;
+}
+
+tooltip {
+    background: rgba(13, 17, 23, 0.92);
+    border: 1px solid @accent;
+    border-radius: 0;
+    color: @foreground;
+}
+
+/* Indicator active colors */
+#custom-screenrecording-indicator.active,
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active,
+#custom-voxtype.recording {
+    color: #ff5555;
+}
+
+#tray menu {
+    background: rgba(13, 17, 23, 0.92);
+    border: 1px solid @accent;
+    border-radius: 0;
+    color: @foreground;
+}

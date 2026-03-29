@@ -1,0 +1,6 @@
+@define-color selected-text #1793d1;
+@define-color text #e0e6ed;
+@define-color base rgba(13, 17, 23, 0.65);
+@define-color border #1793d1;
+@define-color foreground #e0e6ed;
+@define-color background rgba(13, 17, 23, 0.55);

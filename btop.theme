@@ -1,0 +1,83 @@
+# Main background
+theme[main_bg]="#0d1117"
+
+# Main text color
+theme[main_fg]="#e0e6ed"
+
+# Title color for boxes
+theme[title]="#e0e6ed"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#1793d1"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#1c2333"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#1793d1"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#4a5568"
+
+# Color of text appearing on top of graphs
+theme[graph_text]="#a8b5c5"
+
+# Background color of the percentage meters
+theme[meter_bg]="#1c2333"
+
+# Misc colors for processes box
+theme[proc_misc]="#00b4d8"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#1793d1"
+theme[mem_box]="#3fb950"
+theme[net_box]="#00b4d8"
+theme[proc_box]="#b48eff"
+
+# Box divider line and small boxes line color
+theme[div_line]="#2d3748"
+
+# Temperature graph color (Green -> Yellow -> Red)
+theme[temp_start]="#3fb950"
+theme[temp_mid]="#d8a657"
+theme[temp_end]="#ff5555"
+
+# CPU graph colors (Blue -> Cyan)
+theme[cpu_start]="#1793d1"
+theme[cpu_mid]="#00b4d8"
+theme[cpu_end]="#33ccee"
+
+# Mem/Disk free meter (Purple -> Blue)
+theme[free_start]="#b48eff"
+theme[free_mid]="#1793d1"
+theme[free_end]="#00b4d8"
+
+# Mem/Disk cached meter (Blue -> Cyan)
+theme[cached_start]="#1793d1"
+theme[cached_mid]="#00b4d8"
+theme[cached_end]="#33ccee"
+
+# Mem/Disk available meter (Yellow -> Red)
+theme[available_start]="#d8a657"
+theme[available_mid]="#ff7b7b"
+theme[available_end]="#ff5555"
+
+# Mem/Disk used meter (Green -> Cyan)
+theme[used_start]="#3fb950"
+theme[used_mid]="#56d364"
+theme[used_end]="#00b4d8"
+
+# Download graph colors (Yellow -> Red)
+theme[download_start]="#d8a657"
+theme[download_mid]="#ff7b7b"
+theme[download_end]="#ff5555"
+
+# Upload graph colors (Green -> Cyan)
+theme[upload_start]="#3fb950"
+theme[upload_mid]="#56d364"
+theme[upload_end]="#00b4d8"
+
+# Process box color gradient (Blue -> Purple)
+theme[process_start]="#1793d1"
+theme[process_mid]="#00b4d8"
+theme[process_end]="#b48eff"
