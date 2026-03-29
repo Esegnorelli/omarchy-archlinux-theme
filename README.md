@@ -1,20 +1,21 @@
-# Arch Linux Theme for Omarchy
+# Arch Linux-inspired Theme for Omarchy
 
-A clean, minimal theme based on the Arch Linux aesthetic.
+A community theme for [Omarchy](https://omarchy.org/) inspired by the Arch Linux aesthetic.
+
+> **Disclaimer:** This theme is an independent community project, not affiliated with or endorsed by Arch Linux. The Arch Linux name and logo are trademarks of the Arch Linux project. The backgrounds included use the Arch Linux logo for illustrative purposes only.
 
 ## Colors
 
-- **Accent:** `#1793d1` (Arch Linux blue)
+- **Accent:** `#1793d1` (inspired by Arch Linux blue)
 - **Background:** `#0d1117` (near black)
 - **Foreground:** `#e0e6ed` (soft white)
 
 ## Features
 
-- Arch Linux blue (`#1793d1`) as primary accent
-- No rounded corners — sharp, clean edges
-- Waybar with Pac-Man workspace icons (active / occupied / empty)
-- Blur effects tuned for dark backgrounds
-- Custom Hyprland animations
+- Sharp edges — `rounding = 0`
+- Waybar with Pac-Man workspace icons (󰮯 active / 󰊠 occupied / ● empty)
+- Blur and animations tuned for dark backgrounds
+- Custom Hyprland effects
 
 ## Install
 
@@ -23,16 +24,9 @@ omarchy-theme-install https://github.com/Esegnorelli/omarchy-archlinux-theme
 omarchy-theme-set "Archlinux"
 ```
 
-### Apply full Waybar config (Pac-Man workspaces)
+The `waybar/config.jsonc` is applied automatically via the `theme-set` hook.
 
-The `waybar/` directory has the complete Waybar layout with Pac-Man workspace icons:
+## License
 
-```bash
-cp ~/.config/omarchy/themes/archlinux/waybar/config.jsonc ~/.config/waybar/config.jsonc
-cp ~/.config/omarchy/themes/archlinux/waybar/style.css ~/.config/waybar/style.css
-omarchy-restart-waybar
-```
-
-## Backgrounds
-
-Three wallpapers included — the theme rotates through them automatically.
+Theme code: MIT  
+Arch Linux name and logo: © Arch Linux — used for identification only
