@@ -8,33 +8,17 @@ window#waybar {
     border-bottom: 2px solid @accent;
 }
 
-/* Workspaces — especificidade de classe supera all:initial do style.css */
-/* 󰊠 ghost — workspace ocupado não ativo */
-#workspaces button:not(.active) {
-    font-family: 'JetBrainsMono Nerd Font Mono';
-    color: #FFB8FF;
-    opacity: 0.9;
-}
-
-/* ● pellet — workspace vazio */
-#workspaces button.empty {
-    font-family: 'JetBrainsMono Nerd Font Mono';
-    font-size: 9px;
-    color: rgba(255, 255, 255, 0.25);
-    opacity: 0.5;
-}
-
-/* 󰮯 pacman — workspace ativo */
-#workspaces button.active {
-    font-family: 'JetBrainsMono Nerd Font Mono';
-    color: #FFD700;
+/* Workspaces: inativos neutros; ativo em azul Arch.
+   Cores finais ficam no style.css (depois de all:initial). */
+#workspaces button.active,
+#workspaces button.active label {
+    color: #1793d1;
     opacity: 1.0;
 }
 
-/* hover */
-#workspaces button:hover {
-    font-family: 'JetBrainsMono Nerd Font Mono';
-    color: #FFD700;
+#workspaces button:hover,
+#workspaces button:hover label {
+    color: #33b3f0;
     opacity: 1.0;
 }
 
@@ -65,8 +49,13 @@ window#waybar {
 #battery:hover,
 #pulseaudio:hover,
 #network:hover,
-#bluetooth:hover {
+#bluetooth:hover,
+#custom-weather:hover {
     color: @accent;
+}
+
+#custom-weather {
+    color: @foreground;
 }
 
 tooltip {

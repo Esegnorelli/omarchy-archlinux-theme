@@ -23,11 +23,63 @@
   all: initial;
   padding: 0 6px;
   margin: 0 1.5px;
-  min-width: 9px;
+  min-width: 12px;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  color: #e0e6ed;
+  opacity: 0.5;
+  background: transparent;
+  border: none;
 }
 
-#workspaces button.empty {
+#workspaces button label {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  color: #e0e6ed;
   opacity: 0.5;
+  background: transparent;
+}
+
+/* Vazios / inativos: sem cor especial */
+#workspaces button.empty,
+#workspaces button.empty label {
+  opacity: 0.35;
+  color: #e0e6ed;
+}
+
+#workspaces button.visible,
+#workspaces button.visible label,
+#workspaces button.persistent,
+#workspaces button.persistent label {
+  color: #e0e6ed;
+  opacity: 0.55;
+}
+
+#workspaces button.occupied,
+#workspaces button.occupied label {
+  color: #e0e6ed;
+  opacity: 0.75;
+}
+
+/* Ativo: azul Arch */
+#workspaces button.active {
+  color: #1793d1;
+  opacity: 1;
+}
+
+#workspaces button.active label {
+  color: #1793d1;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  color: #33b3f0;
+  opacity: 1;
+}
+
+#workspaces button:hover label {
+  color: #33b3f0;
+  opacity: 1;
 }
 
 #cpu,
