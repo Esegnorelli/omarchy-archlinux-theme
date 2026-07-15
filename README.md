@@ -13,7 +13,8 @@ A community theme for [Omarchy](https://omarchy.org/) inspired by the Arch Linux
 ## Features
 
 - Sharp edges — `rounding = 0`
-- Waybar with Pac-Man workspace icons (󰮯 active / 󰊠 occupied / ● empty)
+- Waybar with Arch Linux icon (`` / U+F303) instead of the Omarchy glyph
+- Date and time in Brazilian Portuguese (`pt_BR`) — e.g. `quarta 15/07 09:02`
 - Blur and animations tuned for dark backgrounds
 - Custom Hyprland effects
 
@@ -24,7 +25,16 @@ omarchy-theme-install https://github.com/Esegnorelli/omarchy-archlinux-theme
 omarchy-theme-set "Archlinux"
 ```
 
-The `waybar/config.jsonc` is applied automatically via the `theme-set` hook.
+On theme set, the local hook `~/.config/omarchy/hooks/theme-set.d/archlinux-waybar`
+copies `waybar/config.jsonc` and `waybar/style.css` into `~/.config/waybar/` and restarts Waybar.
+
+To apply only the Waybar layout manually:
+
+```bash
+cp ~/.config/omarchy/themes/archlinux/waybar/config.jsonc ~/.config/waybar/config.jsonc
+cp ~/.config/omarchy/themes/archlinux/waybar/style.css ~/.config/waybar/style.css
+omarchy restart waybar
+```
 
 ## License
 
